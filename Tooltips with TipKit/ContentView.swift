@@ -24,10 +24,15 @@ struct ContentView: View {
                         .frame(height: 100)
                         .contextMenu {
                             Button("Favorite", systemImage: "star") {
-                                
+                                // code to set as favorite
+                                Task { await SetFavoriteTip.setFavoriteEvent.donate() }
                             }
                         }
                 }
+            }
+            .onAppear {
+                Task { await SetFavoriteTip.colorsViewVisitedEvent.donate() }
+
             }
             .padding()
             .navigationTitle("Colors")

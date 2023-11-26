@@ -24,11 +24,23 @@ struct AddColorTip: Tip {
 }
 
 struct SetFavoriteTip: Tip {
+    static let setFavoriteEvent = Event(id: "setFavorite")
+    static let colorsViewVisitedEvent = Event(id: "colorsViewVisited")
     var title: Text {
         Text("Set Favorite")
     }
     
     var message: Text? {
         Text("Tap and hold a color to add it to your favorites")
+    }
+    
+    var rules: [Rule] {
+        #Rule(Self.setFavoriteEvent) { event in
+            event.donations.count == 0
+        }
+        
+        #Rule(Self.colorsViewVisitedEvent) { event in
+            event.donations.count > 2
+        }
     }
 }

@@ -14,7 +14,7 @@ struct Tooltips_with_TipKitApp: App {
         WindowGroup {
             ContentView()
                 .task {
-                    try? Tips.resetDatastore()
+//                    try? Tips.resetDatastore()
                     try? Tips.configure([
 //                        .displayFrequency(.immediate)
                         .datastoreLocation(.applicationDefault)])
