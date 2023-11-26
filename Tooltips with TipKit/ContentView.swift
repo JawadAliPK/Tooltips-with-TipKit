@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct ContentView: View {
     @State private var colors = MockData.colors
+    let addColorTip = AddColorTip()
     
     var body: some View {
         NavigationStack {
@@ -32,6 +34,7 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "plus")
                 }
+                .popoverTip(addColorTip)
             }
         }
     }
@@ -39,6 +42,12 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .task {
+            try? Tips.resetDatastore()
+            try? Tips.configure([
+//                        .displayFrequency(.immediate)
+                .datastoreLocation(.applicationDefault)])
+        }
 }
 
 extension Color {

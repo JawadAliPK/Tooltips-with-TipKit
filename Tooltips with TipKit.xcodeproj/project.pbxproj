@@ -11,6 +11,7 @@
 		6173205F2B13C5C900ED1D8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173205E2B13C5C900ED1D8C /* ContentView.swift */; };
 		617320612B13C5CA00ED1D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617320602B13C5CA00ED1D8C /* Assets.xcassets */; };
 		617320642B13C5CA00ED1D8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617320632B13C5CA00ED1D8C /* Preview Assets.xcassets */; };
+		6173206D2B13E05A00ED1D8C /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173206C2B13E05A00ED1D8C /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6173205E2B13C5C900ED1D8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		617320602B13C5CA00ED1D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		617320632B13C5CA00ED1D8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6173206C2B13E05A00ED1D8C /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6173205C2B13C5C900ED1D8C /* Tooltips_with_TipKitApp.swift */,
 				6173205E2B13C5C900ED1D8C /* ContentView.swift */,
+				6173206C2B13E05A00ED1D8C /* Tip.swift */,
 				617320602B13C5CA00ED1D8C /* Assets.xcassets */,
 				617320622B13C5CA00ED1D8C /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6173206D2B13E05A00ED1D8C /* Tip.swift in Sources */,
 				6173205F2B13C5C900ED1D8C /* ContentView.swift in Sources */,
 				6173205D2B13C5C900ED1D8C /* Tooltips_with_TipKitApp.swift in Sources */,
 			);
