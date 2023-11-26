@@ -11,10 +11,13 @@ import TipKit
 struct ContentView: View {
     @State private var colors = MockData.colors
     let addColorTip = AddColorTip()
+    let setFavoriteTip = SetFavoriteTip()
     
     var body: some View {
         NavigationStack {
             ScrollView {
+                TipView(setFavoriteTip)
+                    .tipBackground(.teal.opacity(0.2))
                 ForEach(colors, id: \.self) {
                     RoundedRectangle(cornerRadius: 10)
                         .fill($0.gradient)
