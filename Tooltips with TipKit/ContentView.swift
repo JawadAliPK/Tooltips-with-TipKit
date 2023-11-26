@@ -31,6 +31,7 @@ struct ContentView: View {
             .toolbar {
                 Button {
                     colors.insert(.random, at: 0)
+                    addColorTip.invalidate(reason: .actionPerformed)
                 } label: {
                     Image(systemName: "plus")
                 }
